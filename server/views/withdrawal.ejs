@@ -100,8 +100,8 @@
                     <div class="d-flex justify-content-between">
                       <i class="fas fa-piggy-bank fa-3x text-warning"></i>
                       <div class="text-right text-secondary">
-                        <h4 class="text-primary">Deposits</h4>
-                        <h5>$<%= user.availbalance %> </h5>
+                        <h4 class="text-primary">Balance</h4>
+                        <h5 class="balance-amt">$<%= user.availbalance %> </h5>
                       </div>
                     </div>
                   </div>
@@ -159,7 +159,8 @@
             <div class="row align-items-center">
               <div class="col-xl-10 col-12 mb-4 mb-xl-0">
               <div class="col-xl-10 col-12">
-                <h3 class="text-muted text-center mb-3">No Available Fund to Withdraw</h3>
+                <h3 class="text-muted text-center mb-3 starter show">No Available Fund to Withdraw</h3>
+                <h3 class="text-muted  starterlow show">You can only withdraw when you have a balance  above $10</h3>
               </div>
             </div>
           </div>
@@ -169,7 +170,7 @@
     <!-- end of tables -->
     
 
-    <script src="script.js"></script>
+    <script src="dashboard.js"></script>
   </body>
 </html>
 

@@ -21,9 +21,13 @@ fisrt_name: {
     type: String,
     required: true
   },
+  usedcode:{
+    type: String,
+    
+  },
   availbalance:{
     type: String,
-    default: '00.00'
+    default: '09.06'
   },
   withdrawals:{
     type: String,

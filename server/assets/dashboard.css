@@ -22,7 +22,9 @@ body {
 .sidebar-link {
   transition: all .4s;
 }
-
+.show{
+  display: none;
+}
 .sidebar-link:hover {
   background-color: #2456ac;
   border-radius: 5px;

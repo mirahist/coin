@@ -21,18 +21,27 @@ refresh.addEventListener("click", () => {
     setInterval(counting, 1000);
     
 
- copy = document.getElementById("copy");
+copy = document.getElementById("copy");
 copy.addEventListener("click", () =>
  {
     var copyText = document.getElementById("address");
     copyText.select();
-    copyText.setSelectionRange(0, 99999)
-    document.execCommand("copy");
+    document.execCommand("copy")
+    alert("Copied the text: " + copyText.value);
   }
 
 )
 
+//  show the correct thing when  user tries to withdraw
+let balance = document.getElementsByClassName('balance-amt');
+let starter = document.getElementsByClassName('starter');
+let starterLow = document.getElementsByClassName('staterlow')
 
+
+if(balance == 0){
+    starter.classList.remove("show")
+}
+console.log(starter);
 
 
 
