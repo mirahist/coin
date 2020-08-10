@@ -22,14 +22,13 @@ body {
 .sidebar-link {
   transition: all .4s;
 }
-.show{
+.showup{
   display: none;
 }
 .sidebar-link:hover {
   background-color: #2456ac;
   border-radius: 5px;
 }
-
 .current {
   background-color: #2f65c2;
   border-radius: 7px;

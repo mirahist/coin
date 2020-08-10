@@ -1,3 +1,13 @@
+
+var jj = "$0.07991"
+function j(){
+jj  = jj.parseInt();
+}
+
+j()
+
+console.log(jj);
+
 counter = document.getElementById("counter");
 var num = 722; 
 function counting() {
@@ -18,30 +28,33 @@ refresh.addEventListener("click", () => {
 })
    
 
-    setInterval(counting, 1000);
+setInterval(counting, 1000);
     
 
 copy = document.getElementById("copy");
+var copyText = document.getElementById("address");
 copy.addEventListener("click", () =>
  {
-    var copyText = document.getElementById("address");
     copyText.select();
     document.execCommand("copy")
-    alert("Copied the text: " + copyText.value);
   }
 
 )
 
+copyText.addEventListener("click", (e)=>{
+    e.preventDefault();
+})
+
 //  show the correct thing when  user tries to withdraw
-let balance = document.getElementsByClassName('balance-amt');
-let starter = document.getElementsByClassName('starter');
-let starterLow = document.getElementsByClassName('staterlow')
+let balance = document.getElementById('balance-amt');
+let starter = document.getElementById('starter');
+let starterLow = document.getElementById('staterlow')
 
 
-if(balance == 0){
-    starter.classList.remove("show")
+if(balance.innerText == "$00.00"){
+    starter.classList.remove("showup");
 }
-console.log(starter);
+console.log(balance);
 
 
 
