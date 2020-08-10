@@ -1,13 +1,4 @@
 
-var jj = "$0.07991"
-function j(){
-jj  = jj.parseInt();
-}
-
-j()
-
-console.log(jj);
-
 counter = document.getElementById("counter");
 var num = 722; 
 function counting() {
