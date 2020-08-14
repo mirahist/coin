@@ -43,7 +43,6 @@ fisrt_name: {
   },
   referalcode:{
     type: String,
-    default: '383bvfskf'
   },
   date: {
     type: Date,
